@@ -1,0 +1,71 @@
+---------------------------------->
+
+when preparing for an interview the first step is to understand basic data structures:
+
+- How they work
+
+- which operations they can do
+
+- the complexity of these operations
+
+-------------------------------------->
+Arrays:
+
+Arrays store a fixed-size sequence of elements of the same type.
+Elements are accessed by their index.
+Common operations: accessing an element, updating an element.
+Access and update operations have constant time complexity O(1).
+
+
+-------------------------------------->
+Linked Lists:
+
+Linked lists consist of nodes where each node stores a value and a reference to the next node.
+Elements are accessed sequentially by traversing the list from the head node.
+Common operations: insertion at the beginning, insertion at the end, deletion, searching.
+Insertion and deletion at the beginning have constant time complexity O(1).
+Insertion and deletion at the end require traversing the list, resulting in linear time complexity O(n).
+Searching also requires traversing the list, resulting in linear time complexity O(n).
+
+-------------------------------------->
+Stacks:
+
+Stacks follow the Last-In-First-Out (LIFO) principle.
+Elements are added or removed only from the top of the stack.
+Common operations: push (add element), pop (remove element), peek (access the top element).
+All stack operations have constant time complexity O(1).
+
+-------------------------------------->
+Queues:
+
+Queues follow the First-In-First-Out (FIFO) principle.
+Elements are added at the rear (enqueue) and removed from the front (dequeue).
+Common operations: enqueue (add element), dequeue (remove element), peek (access the front element).
+Stacks can be used within queues to implement priority queues.
+Priority queues prioritize elements based on their assigned priority.
+Priority queues can be implemented using heaps (binary heaps, Fibonacci heaps, etc.).
+
+-------------------------------------->
+Heaps:
+
+Heaps are binary trees that satisfy the heap property.
+The heap property defines the ordering between parent and child nodes (e.g., min-heap, max-heap).
+Common operations: insertion, deletion, retrieval of the minimum or maximum element.
+Heap operations have logarithmic time complexity: insertion (O(log n)), deletion (O(log n)), retrieval (O(1)).
+
+-------------------------------------->
+Hash Tables (also known as HashMaps or Dictionaries):
+
+Hash tables use key-value pairs to store data.
+Keys are hashed to determine their storage location in an array (called a hash table).
+Common operations: insertion, deletion, retrieval (based on keys).
+On average, hash table operations have constant time complexity O(1).
+In the worst case, hash table operations can have linear time complexity O(n).
+
+-------------------------------------->
+Trees:
+
+Trees are hierarchical structures with nodes connected by edges.
+Common types include binary trees, binary search trees, and balanced trees (e.g., AVL, red-black).
+Common operations: insertion, deletion, searching.
+The time complexity of tree operations depends on the type and structure of the tree but can range from O(log n) to O(n).
