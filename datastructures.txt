@@ -1,5 +1,4 @@
 ---------------------------------->
-
 when preparing for an interview the first step is to understand basic data structures:
 
 - How they work
@@ -16,6 +15,7 @@ Elements are accessed by their index.
 Common operations: accessing an element, updating an element.
 Access and update operations have constant time complexity O(1).
 
+Example: int[] numbers = {1, 2, 3, 4, 5};
 
 -------------------------------------->
 Linked Lists:
@@ -27,6 +27,11 @@ Insertion and deletion at the beginning have constant time complexity O(1).
 Insertion and deletion at the end require traversing the list, resulting in linear time complexity O(n).
 Searching also requires traversing the list, resulting in linear time complexity O(n).
 
+Example: LinkedList<String> names = new LinkedList<>();
+names.add("Alice");
+names.add("Bob");
+names.add("Charlie");
+
 -------------------------------------->
 Stacks:
 
@@ -34,6 +39,11 @@ Stacks follow the Last-In-First-Out (LIFO) principle.
 Elements are added or removed only from the top of the stack.
 Common operations: push (add element), pop (remove element), peek (access the top element).
 All stack operations have constant time complexity O(1).
+
+Example: Stack<Integer> stack = new Stack<>();
+stack.push(1);
+stack.push(2);
+stack.push(3);
 
 -------------------------------------->
 Queues:
@@ -45,6 +55,11 @@ Stacks can be used within queues to implement priority queues.
 Priority queues prioritize elements based on their assigned priority.
 Priority queues can be implemented using heaps (binary heaps, Fibonacci heaps, etc.).
 
+Example: Queue<String> queue = new LinkedList<>();
+queue.add("Apple");
+queue.add("Banana");
+queue.add("Cherry");
+
 -------------------------------------->
 Heaps:
 
@@ -52,6 +67,11 @@ Heaps are binary trees that satisfy the heap property.
 The heap property defines the ordering between parent and child nodes (e.g., min-heap, max-heap).
 Common operations: insertion, deletion, retrieval of the minimum or maximum element.
 Heap operations have logarithmic time complexity: insertion (O(log n)), deletion (O(log n)), retrieval (O(1)).
+
+Example: PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+minHeap.add(5);
+minHeap.add(2);
+minHeap.add(8);
 
 -------------------------------------->
 Hash Tables (also known as HashMaps or Dictionaries):
@@ -62,6 +82,11 @@ Common operations: insertion, deletion, retrieval (based on keys).
 On average, hash table operations have constant time complexity O(1).
 In the worst case, hash table operations can have linear time complexity O(n).
 
+Example: HashMap<String, Integer> studentGrades = new HashMap<>();
+studentGrades.put("Alice", 90);
+studentGrades.put("Bob", 85);
+studentGrades.put("Charlie", 95);
+
 -------------------------------------->
 Trees:
 
@@ -69,3 +94,49 @@ Trees are hierarchical structures with nodes connected by edges.
 Common types include binary trees, binary search trees, and balanced trees (e.g., AVL, red-black).
 Common operations: insertion, deletion, searching.
 The time complexity of tree operations depends on the type and structure of the tree but can range from O(log n) to O(n).
+
+Example: BinarySearchTree<Integer> tree = new BinarySearchTree<>();
+tree.insert(50);
+tree.insert(30);
+tree.insert(70);
+
+
+--------------------------------------->
+Constant Time Complexity (O(1)):
+
+Constant time complexity means that the time taken to perform an operation does not depend on the input size.
+Regardless of the size of the input, the execution time remains constant.
+It is often considered the most efficient time complexity.
+Examples of constant time operations include accessing an element in an array by index, adding or removing an element from a stack, or retrieving an element from a hash table.
+
+--------------------------------------->
+Linear Time Complexity (O(n)):
+
+Linear time complexity means that the time taken to perform an operation increases linearly with the input size.
+If the input size doubles, the execution time also doubles.
+It scales proportionally with the size of the input.
+Examples of linear time operations include traversing a linked list or an array, searching for an element in an unsorted list, or performing a simple iteration over a collection.
+
+
+To summarize:
+
+Constant time complexity (O(1)) offers a fixed execution time, irrespective of the input size. It provides optimal performance for operations that do not require iterating or processing the entire input.
+Linear time complexity (O(n)) indicates that the execution time increases linearly with the input size. It is a common complexity for operations that involve traversing or iterating over the input.
+It's important to note that there are other time complexities as well, such as logarithmic (O(log n)), quadratic (O(n^2)), and exponential (O(2^n)), among others. The choice of the appropriate data structure and algorithm depends on the specific requirements and characteristics of the problem at hand.
+
+------------------------------->
+
+Logarithmic time complexity (O(log n)) is a time complexity where the execution time of an algorithm increases logarithmically with the input size. In other words, as the input size grows, the time taken by the algorithm increases, but at a slower rate compared to linear time complexity.
+
+Here's how logarithmic time complexity works:
+
+In algorithms with logarithmic time complexity, the input is typically divided into smaller parts, and the algorithm performs operations on those parts recursively or iteratively.
+With each iteration or recursive step, the algorithm reduces the problem size by a constant factor.
+The algorithm continues to divide the problem size until it reaches the base case, which is a problem size small enough to be solved directly.
+The time complexity is determined by the number of times the algorithm can divide the problem size by the constant factor until it reaches the base case.
+Common examples of algorithms with logarithmic time complexity include binary search and certain tree-based data structures like balanced binary search trees (e.g., AVL trees) and heaps.
+
+In binary search, for instance, the algorithm repeatedly divides a sorted array in half and compares the target element with the middle element. By eliminating half of the remaining elements at each step, the algorithm efficiently narrows down the search space. As a result, the time complexity of binary search is O(log n).
+
+Logarithmic time complexity is considered highly efficient and desirable, especially for large input sizes. It signifies that the algorithm can handle significantly larger inputs without a substantial increase in execution time compared to linear or higher time complexities.
+
