@@ -36,3 +36,10 @@ const arrr = names.filter(element => (element[0] === "T"));
 
 console.log(arrr);
 
+
+
+const customerTotals = [99, 56, 78, 110, 29, 59];
+
+const smallOrder = customerTotals.filter(i => (i < 60));
+
+console.log(smallOrder);
