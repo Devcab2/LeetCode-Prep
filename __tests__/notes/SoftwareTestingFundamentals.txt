@@ -1,0 +1,95 @@
+QA : Software Testing Fundamentals
+
+
+THE SOFTWARE TESTING PYRAMID:
+
+Software Testing is generally divided into different styles of testing, This pyramid is the general breakdown of the hierarchy of different types of software tests. The pyramid has a greater quantity of low level tests that are cheaper to create and maintain, compared to higher level tests. The software testing pyramid promotes a balanced approach to testing, with larger number of low-level tests forming the base, followed by fewer integration tests, and even fewer e2e tests at the top this approach helps in achieving comprehensive test coverage while maintaining efficiency and effectiveness in the software testing process.
+
+                                                            ->UI TESTS<-
+
+                                                    --—-> API TESTS <------
+                               
+                                        -——-> INTEGRATION TESTS (E2E)<-------
+     
+                             ——————->   COMPONENT TESTING  <——————
+          
+               —-—————————>         UNIT   TESTING     <———————————
+
+
+UNIT TESTS: 
+
+Unit tests focus on individual unit or components of the software in isolation. EX: testing a function that calculates a square of a number,  Testing a method that sorts a lists of integers.
+
+Unit tests provide fast feedback to devs, ensures the each unit behaves as expected, and facilitate code refactoring and maintainability.  
+
+
+COMPONENT TESTS: 
+
+Component tests verify the behaviour of larger components or groups od interconnected unit/modules within a system.
+
+EX: testing a service layer that interacts with multiple domain objects and repositories, testing a user interface component (e.g a react component in a web application ) along with its associated logic.
+
+Component tests ensure that larger components or subsystems function correctly and adhere tot heir specified behaviour. They help identify integration issues within closely related units and provide more coverage than unit tests while still maintaining a reasonable level of isolation.
+
+
+INTEGRATION TESTS:
+
+Integration tests verify interactions between different components or modules to endure they work together correctly.
+
+EX: testing the integration between a database and the application’s data access layer,  testing the interaction between multiple micro services in a distributed system
+
+Integration tests validate the communication, data flow, and dependencies between various parts the system and identify issues that arise when different components are combined.
+
+
+API TESTS:
+
+Api tests validate the functionality and behaviour of application programming interfaces (API’s) exposed by the software
+
+EX: Testing RESTful APIs by sending HTTP requests and verifying the responses,  Testing GraphQL APIs by executing queries and mutations against the schema
+
+API tests ensure that APIs meet their requirements , including correctness, reliability, security, and performance. They validate input/output data, error handling, authentication, and data validation logic.
+
+END TO END TESTS: 
+
+e2e tests validate the entire system from start to finish, simulating real user scenarios or workflows.
+
+EX: testing the checkout process of an e-commerce website, including adding items to the cart, filling in shipping details, and completing the payment. Testing login flow that involves entering credentials, authentication, and navigation to a user dashboard.
+
+
+UI TESTS:
+
+UI tests, or acceptance tests, validate the user interface and user interactions of the software application.
+
+EX: testing user interactions such as button clicks, form submissions, and navigation between pages/screens. Verify the layout, styling, and visual appearance of UI elements.
+
+UI tests ensure that the applications user interface behaves as expected from the user’s perspective. They validate the overall user experience and help identify issues related to user interactions, layout and styling.
+
+
+
+WHAT IS SOFTWARE TESTING:
+
+Software testing is a critical part of the software development process that ensures the product,  Meets the requirements -> Functions as expected -> Free of major errors / bugs.
+
+WHY IS IT IMPORTANT:
+
+Ensuring Quality, Detecting Defects, Saving Time and Money
+
+SOFTWARE TESTING RESPONSIBILITIES:
+
+Creating a Test Plan -> Document and execute test cases, this involves taking the test plan and creating test cases to satisfy the test plan/requirements 
+
+7 PRINCIPALS OF SOFTWARE TESTING:
+
+1: testing shows the presence of defects, 
+
+2: exhaustive testing is impossible
+
+3: Early testing
+
+4: Defect Clustering 80 - 20 rule 
+
+5: pesticide paradox, as the code changes test cases must change as well
+
+6: testing is context dependent : the greater the importance of an application the more important testing becomes
+
+7: Absence of error fallacy
