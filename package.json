@@ -1,0 +1,11 @@
+{
+  "name": "leetcode-prep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "HelloWorld.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
