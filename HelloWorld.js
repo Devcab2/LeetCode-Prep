@@ -10,8 +10,8 @@ function createHelloWorld() {
 }
 
 // Example usage:
-const f = createHelloWorld();
-console.log(f()); // Output: "Hello World"
-console.log(f({}, null, 42)); // Output: "Hello World"
+// const f = createHelloWorld();
+// console.log(f()); // Output: "Hello World"
+// console.log(f({}, null, 42)); // Output: "Hello World"
 
 module.exports = createHelloWorld;
