@@ -139,4 +139,3 @@ Common examples of algorithms with logarithmic time complexity include binary se
 In binary search, for instance, the algorithm repeatedly divides a sorted array in half and compares the target element with the middle element. By eliminating half of the remaining elements at each step, the algorithm efficiently narrows down the search space. As a result, the time complexity of binary search is O(log n).
 
 Logarithmic time complexity is considered highly efficient and desirable, especially for large input sizes. It signifies that the algorithm can handle significantly larger inputs without a substantial increase in execution time compared to linear or higher time complexities.
-
